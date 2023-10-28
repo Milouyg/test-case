@@ -1,0 +1,179 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-size: 2rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+.roadway {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.roadway .menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0rem 5rem;
+  width: 100%;
+  height: 8rem;
+}
+.roadway .menu-wrapper .logo {
+  width: 15rem;
+  height: 8rem;
+  object-fit: contain;
+}
+.roadway .menu-wrapper .hamrbuger-menu {
+  display: none;
+}
+.roadway .menu-wrapper .menu-items {
+  text-align: center;
+  display: flex;
+  gap: 2rem;
+}
+.roadway .menu-wrapper .menu-items .item {
+  padding: 1rem 1rem;
+  list-style: none;
+  color: #094682;
+}
+.roadway .menu-wrapper .menu-items .item.cta {
+  text-align: center;
+  width: 20rem;
+  padding: 1rem 1rem;
+  background: red;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+.roadway .menu-wrapper .menu-items .item:hover {
+  cursor: pointer;
+}
+.roadway .image-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.roadway .image-wrapper .hero-image {
+  width: 95%;
+}
+.roadway .post-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.roadway .post-wrapper .title-container {
+  display: flex;
+  justify-content: center;
+  width: 102rem;
+}
+.roadway .post-wrapper .title-container .title {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 120%;
+}
+.roadway .post-wrapper .posts-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+  gap: 2.85rem;
+  flex-wrap: wrap;
+}
+.roadway .post-wrapper .posts-container .post {
+  width: 18rem;
+  height: 22rem;
+  position: relative;
+}
+.roadway .post-wrapper .posts-container .post:hover {
+  cursor: pointer;
+}
+.roadway .post-wrapper .posts-container .post .post-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.roadway .post-wrapper .posts-container .post .caption-container {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 20%;
+  background: rgba(9, 70, 130, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+.roadway .post-wrapper .posts-container .post .caption {
+  font-size: 70%;
+}
+.roadway .post-wrapper .selling-points {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  gap: 1rem;
+  padding: 1rem 1rem;
+  background: rgb(184, 223, 255);
+}
+.roadway .post-wrapper .selling-points .selling-point-icon {
+  color: green;
+}
+.roadway .post-wrapper .selling-points .selling-point-title {
+  font-size: 60%;
+}
+
+@media screen and (max-width: 65.625rem) {
+  .roadway .menu-wrapper .menu-items {
+    gap: 1rem;
+  }
+  .roadway .menu-wrapper .menu-items .item {
+    font-size: 90%;
+  }
+  .roadway .menu-wrapper .menu-items .item.cta {
+    font-size: 90%;
+    width: 18rem;
+  }
+  .roadway .post-wrapper .title-container .title {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 57.5rem) {
+  .roadway .menu-wrapper .menu-items {
+    gap: unset;
+  }
+  .roadway .post-wrapper .title-container .title {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 53.125rem) {
+  .roadway .menu-wrapper .hamrbuger-menu {
+    display: flex;
+    font-size: 150%;
+  }
+  .roadway .menu-wrapper .menu-items {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
